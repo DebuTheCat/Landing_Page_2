@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -15,5 +16,28 @@ body {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
+    align-items: center;
+    padding: 0 120px;
+    gap: 40px;
+}
+
+.logo {
+    color: wheat;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: wheat;
+  font-size: 12px;  
+}
+
+.header_links {
+    display: flex;
+    gap: 12px;
 }
