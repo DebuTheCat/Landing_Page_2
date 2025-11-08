@@ -5,14 +5,13 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
-    min-height: 100vh;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .header {
-
+    flex-shrink: 0;
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
@@ -23,6 +22,7 @@ body {
 
 .logo {
     color: wheat;
+    font-size: 24px;
 }
 
 ul {
@@ -34,22 +34,81 @@ ul {
 a {
   text-decoration: none;
   color: wheat;
-  font-size: 12px;  
+  font-size: 18px; 
 }
 
 .header_links {
+    flex-shrink: 0;
     display: flex;
-    gap: 12px;
+    gap: 15px;
 }
 
 .info_section {
     background-color: #1F2937;
     flex: 1;
-    padding: 120px;
+    padding: 50px 120px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    flex-basis: 50%;
 }
 
 h1 {
     font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    max-width: 350px;
+    margin-bottom: -10px;
+}
+
+.info_paragraph {
+    color: #F9FAF8; 
+
+    font-size: 18px;
+}
+
+#info_button {
+    width: 130px;
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 0.8em;
+}
+
+.image_placeholder {
+    background-color: #8c8b8b;
+    color: white;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_section {
+    flex:1;
+}
+
+.blocks_info {
+    flex: 1;
+}
+
+.quote_section {
+    flex: 1;
+}
+
+.singup_section {
+    flex: 1;
+}
+
+.footer {
+    
 }
